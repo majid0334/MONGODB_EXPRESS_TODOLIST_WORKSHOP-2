@@ -1,0 +1,22 @@
+{{! Hämtar datan från databas och dispayer i input för att se kunna redegera den }}
+<form action="/edit-song/{{songL._id}}" method="post">
+  <br />
+  <input
+    type="text"
+    name="artist"
+    placeholder="Artist"
+    {{! Value är vår data från databasen }}
+    value="{{songL.artist}}"
+  />
+  <br />
+
+  {{! Value är vår data från databasen }}
+  <input type="text" name="song" placeholder="Song" value="{{songL.song}}" />
+  <br />
+  <input type="submit" class="btn" />
+</form>
+
+{{! För att kunna radera spesifka iteems }}
+<form action="/delete-song/{{songL._id}}" method="post">
+  <input type="submit" value="Delete" class="btn delete-btn" />
+</form>
