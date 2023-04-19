@@ -1,7 +1,7 @@
 const { MongoClient, ObjectId } = require("mongodb");
 
 const connectionUrl = "mongodb://127.0.0.1:27017";
-/* "mongodb+srv://majidmoradi278:123@cluster0.04mtmqb.mongodb.net/?retryWrites=true&w=majority"; */
+/* "mongodb+srv://{användarnmn}:{egenlösonrd}@cluster0.04mtmqb.mongodb.net/?retryWrites=true&w=majority"; */
 const client = new MongoClient(connectionUrl);
 
 const dbName = "CarsCrudApp";
